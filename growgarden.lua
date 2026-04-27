@@ -14,7 +14,7 @@ button.TextSize = 18
 local function giveTokens()
     local tokenValue
     for _, v in ipairs(player:GetDescendants()) do
-        if v:IsA("ValueBase") and string.lower(v.Name) == "tokens" then
+        if v:IsA("ValueBase") and v.Name == "Tokens" then
             tokenValue = v
             break
         end
